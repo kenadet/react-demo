@@ -24,7 +24,7 @@ const EditPage = () => {
                 setNote(response.data.note);
               }); 
         }
-    }, []);
+    }, [noteId]);
 
     const handleSave = (e) => {
 

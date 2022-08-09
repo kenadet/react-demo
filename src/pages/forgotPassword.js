@@ -5,7 +5,6 @@ const ForgotPassword = () => {
 
     const [email, setEmail] = useState("");
     const [submitted, setSubmitted] = useState(false);
-    const [loading, setLoading] = useState(false);
     const [isEmptyMail, setIsEmptyMail] = useState(false);
     const [message, setMessage] = useState('')
 
@@ -41,7 +40,7 @@ const ForgotPassword = () => {
                     onChange={(e) => {setEmail(e.target.value); setIsEmptyMail(false); setMessage('');}}
                     className="form-control" required
                     maxLength="50"/>
-                 <button type="submit" className="btn btn-primary mx-3" disabled={loading} id="button-addon2">
+                 <button type="submit" className="btn btn-primary mx-3"  id="button-addon2">
                     Submit
                 </button>
                 </div>
