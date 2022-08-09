@@ -1,8 +1,8 @@
 import React, {useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch} from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import User from '../models/user';
-import { setCurrentUser, clearCurrentUser} from '../redux/actions/user';
+import { setCurrentUser} from '../redux/actions/user';
 import {register} from '../services/authService';
 
 const RegisterForm = () => {

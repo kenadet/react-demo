@@ -15,7 +15,6 @@ const EditPage = () => {
 
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('');
 
       //mounted
      useEffect(() => {

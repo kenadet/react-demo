@@ -7,7 +7,6 @@ const ResetPassword = () => {
     const [newPassword, setNewPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [submitted, setSubmitted] = useState(false);
-    const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('')
     const {token} = useParams()
 
@@ -61,7 +60,7 @@ const ResetPassword = () => {
                     className="form-control" required
                     maxLength="30"/>
                </div>
-                <button type="submit" className="btn btn-primary" disabled={loading} id="button-addon2">
+                <button type="submit" className="btn btn-primary" id="button-addon2">
                     Submit
                 </button>        
             </form>

@@ -13,16 +13,14 @@ export const register = (firstName, lastName, email, password) => {
 };
 
 export const login = (email, password) => {
-  return axios
-    .post(USER_API_URL + "login", {
+  return axios.post(USER_API_URL + "login", {
       email,
       password,
     })
 };
 
 export const forgotPassword = (email) => {
-  return axios
-    .put(USER_API_URL + "forgotpassword", {
+  return axios.put(USER_API_URL + "forgotpassword", {
       email,
     })
 };
@@ -32,5 +30,5 @@ export const resetPassword = (password, token) => {
     newPassword : password,
     resetLink : token
   }
-return axios .put(USER_API_URL + "resetpassword", config)
+return axios.put(USER_API_URL + "resetpassword", config)
 };
